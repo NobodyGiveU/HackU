@@ -41,7 +41,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 relative overflow-hidden" style={{ backgroundColor: COLORS.PRIMARY_BG, position: 'relative' }}>
+    <section id="contact" className="py-20 relative overflow-hidden" style={{ backgroundColor: COLORS.PRIMARY_BG }}>
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{ backgroundColor: COLORS.PRIMARY_ACCENT }}></div>
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="absolute bottom-20 left-1/2 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000" style={{ backgroundColor: COLORS.PRIMARY_ACCENT }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ position: 'relative' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-4">
             <Sparkles className="animate-pulse sm:w-6 sm:h-6" size={20} style={{ color: COLORS.PRIMARY_ACCENT }} />

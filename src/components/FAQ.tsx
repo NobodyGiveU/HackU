@@ -86,7 +86,7 @@ const FAQ = () => {
       className="py-16 sm:py-20 relative overflow-hidden min-h-screen flex items-center justify-center"
       style={{ backgroundColor: COLORS.PRIMARY_BG }}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full" style={{ position: 'relative' }}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <motion.div
           className="text-center mb-12 sm:mb-16"
           initial={{ opacity: 0, y: -30 }}

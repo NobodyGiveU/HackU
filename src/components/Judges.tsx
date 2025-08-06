@@ -53,7 +53,7 @@ const Judges = () => {
       </div>
 
       {/* Main content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" style={{ position: 'relative' }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         {/* JUDGES SECTION */}
         <motion.h2
           initial={{ opacity: 0, y: -50 }}

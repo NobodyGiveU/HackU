@@ -380,9 +380,9 @@ const Hero = () => {
       </style>
       
       <div id="app-wrapper">
-        <section id="home" className="hero-gradient min-h-screen flex flex-col justify-center items-center relative py-24 sm:py-32" style={{ position: 'relative' }}>
+        <section id="home" className="hero-gradient min-h-screen flex flex-col justify-center items-center relative py-24 sm:py-32">
           {/* Main Content Block for Centering */}
-          <div className="flex flex-col items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" style={{ position: 'relative' }}>
+          <div className="flex flex-col items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             {/* Main Heading */}
             <div className={`fade-in-up`}>
               <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight">

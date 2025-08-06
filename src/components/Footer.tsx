@@ -53,8 +53,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-12 border-t relative" style={{ backgroundColor: COLORS.PRIMARY_BG, borderColor: `${COLORS.SURFACE}`, position: 'relative' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ position: 'relative' }}>
+    <footer className="py-12 border-t relative" style={{ backgroundColor: COLORS.PRIMARY_BG, borderColor: `${COLORS.SURFACE}` }}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12">
           {/* Logo and Socials */}
           <div className="text-center md:text-left flex flex-col items-center md:items-start">
