@@ -59,7 +59,7 @@ const Judges = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-clip-text text-transparent px-4 sm:px-0"
           style={{
             backgroundImage: `linear-gradient(to right, ${COLORS.PRIMARY_ACCENT}, ${COLORS.SECONDARY_ACCENT})`,
             fontFamily: 'var(--font-heading)'
@@ -72,7 +72,7 @@ const Judges = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-          className="text-xl md:text-2xl max-w-2xl mx-auto mb-12"
+          className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-8 sm:mb-12 px-4 sm:px-0"
           style={{
             color: COLORS.TEXT_MUTED,
             fontFamily: 'var(--font-body)'
@@ -128,9 +128,9 @@ const Judges = () => {
           <img src="/logos/logo7.png" alt="Sponsor 7" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
           <img src="/logos/logo8.png" alt="Sponsor 8" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
           <img src="/logos/logo9.webp" alt="Sponsor 9" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
-          <img src="/logos/logo5.png" alt="Sponsor 10" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
-          <img src="/logos/logo11.png" alt="Sponsor 11" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
-          <img src="/logos/logo77.png" alt="Sponsor 12" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
+          <img src="/logos/logo5.svg" alt="Sponsor 10" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
+          <img src="/logos/logo6.png" alt="Sponsor 11" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
+          <img src="/logos/logo12.png" alt="Sponsor 12" className="w-36 filter grayscale brightness-200 opacity-70 hover:opacity-100 hover:filter-none transition" />
         </div>
       </div>
     </section>
