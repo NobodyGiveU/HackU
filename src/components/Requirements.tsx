@@ -218,7 +218,7 @@ const Requirements = () => {
   };
 
   return (
-    <section id="requirements" className="py-20 relative overflow-hidden" style={{ backgroundColor: COLORS.PRIMARY_BG , position: 'relative' }}>
+    <section id="requirements" className="py-20 relative overflow-hidden" style={{ backgroundColor: COLORS.PRIMARY_BG, position: 'relative' }}>
       {/* Particle Background */}
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 25 }).map((_, i) => (
@@ -226,7 +226,7 @@ const Requirements = () => {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ position: 'relative' }}>
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: -30 }}

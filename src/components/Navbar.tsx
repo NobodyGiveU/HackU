@@ -367,6 +367,27 @@ const Navbar = () => {
             height: 80px;
           }
 
+          /* Safari optimizations */
+          @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .navbar-glass,
+            .navbar-transparent {
+              -webkit-backdrop-filter: blur(20px);
+              will-change: background-color, backdrop-filter;
+              transform: translateZ(0);
+            }
+            
+            .nav-link,
+            .mobile-nav-item {
+              will-change: transform, color;
+              transform: translateZ(0);
+            }
+            
+            .flame-button {
+              will-change: transform, box-shadow;
+              transform: translateZ(0);
+            }
+          }
+
           /* Focus styles for accessibility */
           .nav-link:focus,
           .hamburger-btn:focus {

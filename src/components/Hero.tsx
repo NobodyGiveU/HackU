@@ -358,13 +358,31 @@ const Hero = () => {
           .interactive-bg.active {
             opacity: 1;
           }
+
+          /* Safari optimizations */
+          @media screen and (-webkit-min-device-pixel-ratio: 0) {
+            .hero-gradient::before {
+              will-change: opacity;
+              transform: translateZ(0);
+            }
+            
+            .floating-particles .particle {
+              will-change: transform;
+              transform: translateZ(0);
+            }
+            
+            .countdown-container::before {
+              will-change: transform;
+              transform: translateZ(0);
+            }
+          }
         `}
       </style>
       
       <div id="app-wrapper">
-        <section id="home" className="hero-gradient min-h-screen flex flex-col justify-center items-center relative py-24 sm:py-32">
+        <section id="home" className="hero-gradient min-h-screen flex flex-col justify-center items-center relative py-24 sm:py-32" style={{ position: 'relative' }}>
           {/* Main Content Block for Centering */}
-          <div className="flex flex-col items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="flex flex-col items-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" style={{ position: 'relative' }}>
             {/* Main Heading */}
             <div className={`fade-in-up`}>
               <h1 className="hero-title text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-tight">

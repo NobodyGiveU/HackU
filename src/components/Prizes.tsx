@@ -207,8 +207,8 @@ const Prize = () => {
         {!allPrizesRevealed ? (
           <>
             {/* Treasure Chest Section */}
-            <div className="flex flex-col items-center justify-center mb-16">
-              <div className="relative" style={{ perspective: '1000px' }}>
+            <div className="flex flex-col items-center justify-center mb-16" style={{ position: 'relative' }}>
+              <div className="relative" style={{ perspective: '1000px', position: 'relative' }}>
                 {/* Treasure Chest */}
                 <div
                   className={`
@@ -228,7 +228,8 @@ const Prize = () => {
                       drop-shadow(0 5px 15px rgba(255, 104, 73, 0.6))
                       drop-shadow(0 0 50px rgba(255, 104, 73, 0.4))
                     `,
-                    animation: !chestOpened && !isAnimating ? 'treasure-glow 3s ease-in-out infinite alternate, gentle-float 4s ease-in-out infinite' : undefined
+                    animation: !chestOpened && !isAnimating ? 'treasure-glow 3s ease-in-out infinite alternate, gentle-float 4s ease-in-out infinite' : undefined,
+                    willChange: 'transform, filter'
                   }}
                 >
                   {/* Enhanced Base Shadow */}
@@ -721,6 +722,15 @@ const Prize = () => {
 
       {/* Enhanced CSS Animations */}
       <style>{`
+        /* Safari optimizations */
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .transform-gpu {
+            -webkit-transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+          }
+        }
+
         @keyframes treasure-glow {
           0% { 
             filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.8)) drop-shadow(0 5px 15px rgba(255, 104, 73, 0.6)) drop-shadow(0 0 50px rgba(255, 104, 73, 0.4));

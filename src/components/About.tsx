@@ -53,7 +53,7 @@ const About = () => {
         style={{ backgroundColor: `${COLORS.SECONDARY_ACCENT}1A` }}
       ></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" style={{ position: 'relative' }}>
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h2

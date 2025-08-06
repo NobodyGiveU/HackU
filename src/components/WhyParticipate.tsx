@@ -187,7 +187,7 @@ function WhyParticipate() {
       className="relative min-h-screen py-16 overflow-hidden"
       style={{ backgroundColor: COLORS.PRIMARY_BG }}
     >
-      <div ref={containerRef} className="relative max-w-5xl mx-auto px-6">
+      <div ref={containerRef} className="relative max-w-5xl mx-auto px-6" style={{ position: 'relative' }}>
 
         {/* Header Section */}
         <div className="relative text-center mb-16">
@@ -239,7 +239,7 @@ function WhyParticipate() {
         </div>
 
         {/* Journey Stages Section */}
-        <div className="relative">
+        <div className="relative" style={{ position: 'relative' }}>
           <AnimatedPath />
 
           <div className="relative space-y-0">

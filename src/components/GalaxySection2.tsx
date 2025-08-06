@@ -599,7 +599,7 @@ const GalaxySection2 = () => {
   };
 
   return (
-    <section id="previous" className="relative w-full min-h-screen overflow-hidden perspective-1000" style={{ backgroundColor: '#0E0B16' }}>
+    <section id="previous" className="relative w-full min-h-screen overflow-hidden perspective-1000" style={{ backgroundColor: '#0E0B16', position: 'relative' }}>
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-radial from-blue-900/20 via-purple-900/10 to-transparent" />
@@ -619,7 +619,7 @@ const GalaxySection2 = () => {
       <div 
         ref={containerRef}
         className="relative w-full h-screen flex items-center justify-center"
-        style={{ transformStyle: 'preserve-3d' }}
+        style={{ transformStyle: 'preserve-3d', position: 'relative' }}
       >
         {/* Central Core - United Hacks V6 */}
         {renderV6Core()}

@@ -86,7 +86,7 @@ const FAQ = () => {
       className="py-16 sm:py-20 relative overflow-hidden min-h-screen flex items-center justify-center"
       style={{ backgroundColor: COLORS.PRIMARY_BG }}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full" style={{ position: 'relative' }}>
         <motion.div
           className="text-center mb-12 sm:mb-16"
           initial={{ opacity: 0, y: -30 }}
@@ -258,6 +258,17 @@ const FAQ = () => {
         .backface-hidden {
           backface-visibility: hidden;
         }
+
+       /* Safari optimizations */
+       @media screen and (-webkit-min-device-pixel-ratio: 0) {
+         .preserve-3d {
+           -webkit-transform-style: preserve-3d;
+         }
+         
+         .backface-hidden {
+           -webkit-backface-visibility: hidden;
+         }
+       }
       `}</style>
     </section>
   );

@@ -68,3 +68,48 @@ html {
 .glow-purple {
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
+/* Safari performance optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .animate-pulse,
+  .animate-bounce,
+  .animate-ping {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+  
+  .transition-all,
+  .transition-transform,
+  .transition-opacity {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+  }
+  
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl {
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .transform {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
